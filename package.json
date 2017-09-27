@@ -1,0 +1,16 @@
+{
+    "name": "application",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "http-server -p 9000 -o",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "mqtt": "^2.13.0"
+    }
+}
