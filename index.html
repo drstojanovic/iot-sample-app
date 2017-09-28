@@ -5,24 +5,78 @@
     <title>My Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="node_modules/semantic-ui/dist/semantic.min.css">
+    <link href="main.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Home</h1>
 
-    <p> Temperature:
-        <span id="temperature"></span>
-    </p>
-    <p> Humidity:
-        <span id="humidity"></span>
-    </p>
-    <p>Optical:
-        <span id="optical"></span>
-    </p>
-    <p>Pressure:
-        <span id="pressure"></span>
-    </p>
+    <div class="ui container">
+
+        <h1>IoT Measuring</h1>
+
+        <div class="ui stackable four column grid">
+            <div class=" four wide column">
+                <div id="temperature-wrapper" class="ui segment">
+                    <div class="ui statistic">
+                        <div class="label">
+                            Temperature
+                        </div>
+                        <div class="value">
+                            <i class="half thermometer icon"></i>
+                            <span id="temperature">~</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" four wide column">
+                <div id="humidity-wrapper" class="ui segment">
+                    <div class="ui statistic ">
+                        <div class="label">
+                            Humidity
+                        </div>
+                        <div class="value">
+                            <span id="humidity">~</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" four wide column">
+                <div id="optical-wrapper" class="ui segment">
+                    <div class="ui statistic">
+                        <div class="label">
+                            Optical
+                        </div>
+                        <div class="value">
+                            <i class="moon icon"></i>
+                            <span id="optical">~</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" four wide column">
+                <div id="pressure-wrapper" class="ui segment">
+                    <div class="ui statistic ">
+                        <div class="label">
+                            Pressure
+                        </div>
+                        <div class="value">
+                            <span id="pressure">~</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui stackable grid">
+            Light:
+        </div>
+
+    </div>
 
     <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
     <script src="main.js"></script>

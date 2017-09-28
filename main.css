@@ -1,0 +1,14 @@
+@keyframes colorChange {
+    from {
+        background-color: #B03060 !important;
+    }
+    to {
+        background-color: transparent;
+    }
+}
+
+.animate {
+    background-color: #B03060 !important;
+    animation-name: colorChange;
+    animation-duration: 3s;
+}
