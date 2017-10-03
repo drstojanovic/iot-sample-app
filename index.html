@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="node_modules/semantic-ui/dist/semantic.min.css">
-    <link href="main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,6 +15,12 @@
     <div class="ui container">
 
         <h1>IoT Measuring</h1>
+
+        <div>
+            <a href="/settings.html" class="ui link">Settings</a>
+
+            <button id="startReading" class="ui primary button">Start Reading</button>
+        </div>
 
         <div class="ui stackable four column grid">
             <div class=" four wide column">
@@ -71,15 +77,13 @@
                 </div>
             </div>
         </div>
-
-        <div class="ui stackable grid">
-            Light:
-        </div>
-
     </div>
 
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
-    <script src="main.js"></script>
+    <script src="js/shared.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

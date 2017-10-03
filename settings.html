@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Home Settings</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="node_modules/semantic-ui/dist/semantic.min.css">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="ui container">
+
+        <h1>Settings</h1>
+        <div>
+            <a href="/index.html" class="ui link">Home</a>
+        </div>
+
+        <h4>Discovery</h4>
+        <button id="discoveryOn" class="ui primary button">On</button>
+        <button id="discoveryOff" class="ui button">Off</button>
+
+        <div id="listOfDevices" class="ui middle aligned selection celled list">
+            <!-- <div class="item">
+                <div class="content">
+                    <div class="header">Helen</div>
+                    <span>An excellent companion</span>
+                </div>
+            </div> -->
+        </div>
+
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+    <script src="js/shared.js"></script>
+    <script src="js/settings.js"></script>
+</body>
+
+</html>
