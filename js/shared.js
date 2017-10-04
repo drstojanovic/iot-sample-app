@@ -45,6 +45,20 @@
             });
     };
 
+    onValue('/device', function(value) {
+        console.log('Online status');
+        console.log(value);
+        var online = !!value.onlineState;
+        console.log(online);
+        if (online) {
+            $('#offlineMsg').hide();
+            $('#onlineMsg').show();
+        } else {
+            $('#offlineMsg').show();
+            $('#onlineMsg').hide();
+        }
+    });
+
     window.SM.sendMessage = sendMessage;
     window.SM.onValue = onValue;
     window.SM.sendCommand = sendCommand;
