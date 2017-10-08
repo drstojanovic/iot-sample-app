@@ -2,7 +2,6 @@
     'use strict';
 
     var updateDevices = function(devices) {
-        console.log(devices);
         var $listOfDevices = $('#listOfDevices');
         $listOfDevices.html('');
 
@@ -17,8 +16,6 @@
                 '    <span>' + devices[i].protocol + '</span>' +
                 '</div>' +
                 '</div>');
-
-            console.log($el);
 
             $listOfDevices.append($el);
         }
